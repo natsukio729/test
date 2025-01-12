@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>Detected Text: {{ text }}</p>
+    <p>Detected Font: {{ font }}</p>
+    <p>Detected Color: {{ color }}</p>
+    <p>Recognized Object: {{ recognized_object }}</p>
+    <h2>YOLO Detection Results</h2>
+    <ul>
+        {% for result in yolo_result %}
+        <li>{{ result[0] }}: ({{ result[1] }}, {{ result[2] }}, {{ result[3] }}, {{ result[4] }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
