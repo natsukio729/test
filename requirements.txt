@@ -1,9 +1,0 @@
-Flask
-pytesseract
-Pillow
-tensorflow
-numpy
-opencv-python
-matplotlib
-colorthief
-gunicorn
