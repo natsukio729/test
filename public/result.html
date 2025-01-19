@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Result</h1>
-    <p>Detected Text: {{ text }}</p>
-    <p>Detected Font: {{ font }}</p>
-    <p>Detected Color: {{ color }}</p>
-    <p>Recognized Object: {{ recognized_object }}</p>
-    <h2>YOLO Detection Results</h2>
-    <ul>
-        {% for result in yolo_result %}
-        <li>{{ result[0] }}: ({{ result[1] }}, {{ result[2] }}, {{ result[3] }}, {{ result[4] }})</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+    <div class="container">
+        <h1>Result</h1>
+        <div class="card">
+            <div class="card-title">Detected Text</div>
+            <div class="card-body">
+                <p>{{ text }}</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Detected Font</div>
+            <div class="card-body">
+                <p>{{ font }}</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Detected Color</div>
+            <div class="card-body">
+                <p>{{ color }}</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Recognized Object</div>
+            <div class="card-body">
+                <p>{{ recognized_object }}</p>
+            </div>
+        </div>
+        <h2>YOLO Detection Results</h2>
+        <ul>
+            {% for result in yolo_result %}
+            <li>{{ result[0] }}: ({{ result[1] }}, {{ result[2] }}, {{ result[3] }}, {{ result[4] }}

@@ -1,0 +1,32 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+.card-body > * {
+    flex: 1;
+}
